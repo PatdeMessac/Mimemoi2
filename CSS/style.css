@@ -1,0 +1,136 @@
+
+*{
+padding-top: 0;
+	width: 100%;
+text-align: center;}
+
+.navbartop{
+	position: fixed;
+	padding-top: 0;
+	margin-top: 0;
+	display: block;
+	height : 70px;
+	width : 100%;
+	background-color: black;
+	
+}
+
+	.navbartop_right{
+		
+		height: 60px;
+		width : 95%;
+
+	}
+
+
+	.navbartop_logo{
+		height: 60px;
+		width : 450px;
+
+		background-image: url(../images/lgo_mimeetmoi_white-2x.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: 35%;
+		margin-right : 35%;
+		border: 2px solid red;
+
+
+	}
+
+
+.navbar_top_side{}
+
+.top_photo{
+	height : 700px;
+	width: 100%;
+	background-image: url(../images/index.png);
+	background-size: cover;
+}
+
+	.top_photo h1, h2{
+		color: white;
+	}
+	.top_photo h2{font-family: 'Playfair Display';}
+
+	.top_photo a{
+
+	color : black;
+	background-color: white;
+	font-style: italic;
+	}
+
+.carousel_top{
+	height : 700px;
+	width:100%;
+	background-color: #F1F1F3;
+}
+
+	.carousel_left{}
+
+	.carousel_right{}
+
+
+.newcomer li{
+	list-style-type: none;
+
+height:150px;
+width: 150px;
+}
+
+.Kollektion{
+	background-color: black;
+	color: white;
+	margin-bottom: 25px;
+}
+
+.video{
+height: 900px;
+width: 100%;
+}
+
+.player{
+	width : 95%;
+height: 600px;
+}
+
+
+.easy{}
+
+.hammer{
+	height:530px;
+	background-color: #F1F1F3;
+}
+
+	.hammer_left{
+		height: 400px;
+		width : 40%;
+		padding-left : 40px;
+		background-image: url(../images/made4u.jpg);
+		background-size: cover;
+	}
+
+	.hammer_right{
+		height: 400px;
+		width : 40%;
+	}
+
+.insta{
+	height: 500px;
+	width : 95%;
+	background-color: black;
+}
+.insta img{
+	width : 50px;
+	height:50px;
+}
+
+.kontakt{}
+
+
+.social{}
+
+
+
+.pay{}
+
+footer{}
