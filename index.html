@@ -10,23 +10,32 @@
 
 <div class ="navbartop">
 
-	<div class="navbartop_logo">11</div>
+	<div class="navbartop_logo"></div>
+
 		<div class="navbartop_right">
-			<a href="">WARENKORB</a> 
-			<a href="">ANMELDEN</a>
+			<a href=""><img src="images/ico_login_white@2x.png"> ANMELDEN</a>
+			<a href=""><img src="images/ico_basket_white.png"> WARENKORB</a> 
 		</div>
 	</div>
 
 <div class="navbar_top_side">
 
-    Menü schließen
+<!--CODE NAVBAR W3School-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Menü schließen</a>  <!--&times;-->
+  <a href="#">Startseite</a>
+  <a href="#">Schuhe</a>
+  <a href="#">Heels</a>
+  <a href="#">Über Mime et moi</a>
+  <a href="#">Kontakt</a>
+  <a href="#">FAQ</a>
+</div>
 
-    Startseite
-    Schuhe
-    Heels
-    Über Mime et moi
-    Kontakt
-    FAQ
+<!--<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>-->
+<span  onclick="openNav()"><img src="images/ico_menue_white.png"></span><!--&#9776;-->
+
+ 
 
 </div>
 
@@ -36,7 +45,7 @@
 <div class ="top_photo">
 	<h2>Von Heels zu Flats</h2>
 	<h1>ABSATZ WECHSEL DICH!</h1>
-	<a href="">MEHR ERFAHREN</a>
+	<a href=""><p>MEHR ERFAHREN<p></a>
 </div>
 
 <div class="carousel_top">
@@ -63,7 +72,7 @@
 <h1>DIE AUFREGENDSTEN NEWCOMER</h1>
 
 <ul>
-	<li><img src="/home/pcapprenant16/Documents/Mimemoi2/images/IMG_639656e27d79bf778_1280x1280.jpg">
+	<li style="50%"><img src="/home/pcapprenant16/Documents/Mimemoi2/images/IMG_639656e27d79bf778_1280x1280.jpg">
 	N°1
 	Black Dalmatine
 	175,00 €
@@ -216,7 +225,16 @@ Patented tech
 
 </footer>
 
+<!--SCRIPT NAVBAR TOP-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 
 

@@ -1,46 +1,108 @@
 
-*{
+body{
 padding-top: 0;
 	width: 100%;
-text-align: center;}
+}
 
 .navbartop{
+	display: flex;
 	position: fixed;
-	padding-top: 0;
-	margin-top: 0;
-	display: block;
 	height : 70px;
 	width : 100%;
 	background-color: black;
+	opacity: 0.9;
 	
 }
-
-	.navbartop_right{
-		
-		height: 60px;
-		width : 95%;
-
-	}
+span{
+	font-size:30px;
+	cursor:pointer; 
+	
+	background-color : black;
+	padding-top : 15px;
+	padding-left :15px;
+	position: fixed;
+}
 
 
 	.navbartop_logo{
+		
 		height: 60px;
-		width : 450px;
+		width : 800px;
 
 		background-image: url(../images/lgo_mimeetmoi_white-2x.png);
 		background-size: contain;
 		background-repeat: no-repeat;
+		margin-top: 15px;
 		margin-left: 35%;
-		margin-right : 35%;
 		border: 2px solid red;
 
 
 	}
 
+	.navbartop_right{
+		background-color: grey;
+		float: right;
+		height: 60px;
+		width : 95%;
 
-.navbar_top_side{}
+	}
+		.navbartop_right img{
+			width : 35px;
+			height : 35px;
+		}
 
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+
+.sidenav a {
+	background-color: white;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:  #818181;/*#818181*/
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	background-color: grey;
+	color :white;
+/*    position: absolute;
+    top: 60px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;*/
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 0px;
+  }
+  .sidenav a {font-size: 18px;
+  }
+}
+
+
+
+/*.navbar_top_side{width : 150%;
+height : 350px;}
+*/
 .top_photo{
+	padding-top: 75px;
 	height : 700px;
 	width: 100%;
 	background-image: url(../images/index.png);
@@ -49,14 +111,18 @@ text-align: center;}
 
 	.top_photo h1, h2{
 		color: white;
+		text-align: center;
 	}
 	.top_photo h2{font-family: 'Playfair Display';}
 
-	.top_photo a{
+	.top_photo p{
+		text-align: center;
+	width : 30%;
+	margin-left: 35%;
+		color : black;
+		background-color: white;
+	    font-style: italic;
 
-	color : black;
-	background-color: white;
-	font-style: italic;
 	}
 
 .carousel_top{
@@ -72,18 +138,19 @@ text-align: center;}
 
 .newcomer li{
 	list-style-type: none;
-
-height:150px;
-width: 150px;
+	height:150px;
+	width: 150px;
 }
 
 .Kollektion{
+	position: relative;
 	background-color: black;
 	color: white;
 	margin-bottom: 25px;
 }
 
 .video{
+	position : relative;
 height: 900px;
 width: 100%;
 }
