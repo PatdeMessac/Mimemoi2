@@ -1,17 +1,17 @@
 
 body{
-padding-top: 0;
+
 	width: 100%;
 }
 
 .navbartop{
 	display: flex;
 	position: fixed;
-	height : 70px;
+	height : 80px;
 	width : 100%;
 	background-color: black;
 	opacity: 0.9;
-	
+
 }
 span{
 	font-size:30px;
@@ -41,9 +41,9 @@ span{
 
 	.navbartop_right{
 		background-color: grey;
-		float: right;
+		padding-left: 10%;
 		height: 60px;
-		width : 95%;
+		width : 40%;
 
 	}
 		.navbartop_right img{
@@ -72,7 +72,7 @@ span{
     font-size: 25px;
     color:  #818181;/*#818181*/
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -102,23 +102,29 @@ span{
 height : 350px;}
 */
 .top_photo{
-	padding-top: 75px;
+	
+	
+	margin-left: 5%;
 	height : 700px;
-	width: 100%;
+	width: 90%;
 	background-image: url(../images/index.png);
 	background-size: cover;
 }
 
-	.top_photo h1, h2{
+	.top_photo h2{
+		margin-top: 80px;
+		padding-top: 250px;
 		color: white;
 		text-align: center;
 	}
-	.top_photo h2{font-family: 'Playfair Display';}
+
+	.top_photo h1{color : white;text-align: center;}
 
 	.top_photo p{
+margin-top: 325px;
 		text-align: center;
-	width : 30%;
-	margin-left: 35%;
+		width : 30%;
+		margin-left: 35%;
 		color : black;
 		background-color: white;
 	    font-style: italic;
@@ -134,6 +140,14 @@ height : 350px;}
 	.carousel_left{}
 
 	.carousel_right{}
+
+	.mySlides {display:none
+		width : 50%;
+		height: 50%
+	}
+	.w3-left, .w3-right, .w3-badge {cursor:pointer}
+	.w3-badge {height:13px;width:13px;padding:0}
+
 
 
 .newcomer li{

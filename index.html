@@ -2,8 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mimemoi2</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
 </head>
 <body>
@@ -16,7 +18,7 @@
 			<a href=""><img src="images/ico_login_white@2x.png"> ANMELDEN</a>
 			<a href=""><img src="images/ico_basket_white.png"> WARENKORB</a> 
 		</div>
-	</div>
+</div>
 
 <div class="navbar_top_side">
 
@@ -61,7 +63,23 @@
 
 		<h1><a href=""> KOLLEKTION ANSEHEN</a></h1> 
 	</div>
-	<div class="carousel_right">
+	<div class="carousel_right"> <!--CAROUSEL W3.CSS-->
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/IMG_639656e27d79bf778_1280x1280.jpg" >
+  <img class="mySlides" src="images/IMG_737656e928572a831_1280x1280.jpg">
+  <img class="mySlides" src="images/IMG_737856e91f1766533_1280x1280.jpg">
+  <div class="w3-center w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+
+
 		
 	</div>
 </div>
@@ -72,7 +90,7 @@
 <h1>DIE AUFREGENDSTEN NEWCOMER</h1>
 
 <ul>
-	<li style="50%"><img src="/home/pcapprenant16/Documents/Mimemoi2/images/IMG_639656e27d79bf778_1280x1280.jpg">
+	<li style="size =50%"><img src="/home/pcapprenant16/Documents/Mimemoi2/images/IMG_639656e27d79bf778_1280x1280.jpg">
 	N°1
 	Black Dalmatine
 	175,00 €
@@ -236,6 +254,39 @@ function closeNav() {
 }
 </script>
 
+
+
+<!--Script carousel W3.css-->
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
 
 
 </body>
