@@ -1,5 +1,6 @@
 
-html{
+body{
+	
 padding: 0;
 margin: 0;
 	width: 100%;
@@ -107,7 +108,7 @@ height : 350px;}
 .top_photo{
 	
 	padding-top: 250px;
-	margin-left: 5%;
+	
 	height : 900px;
 	width: 100%;
 	background-image: url(../images/index.png);
@@ -291,19 +292,27 @@ height: 250px;}
 	background-color: #F1F1F3;
 }
 
-	.hammer_left{float: left;
+	.hammer_left{
+		float: left;
+		margin-top: 50px;
+		margin-left: 50px;
+		margin-right: 80px;
 		height: 400px;
 		width : 40%;
-		padding-left : 40px;
+	
 		background-image: url(../images/made4u.jpg);
 		background-size: cover;
 	}
 
 	.hammer_right{
-		float: right;
+		
+		
 		height: 400px;
 		width : 40%;
 	}
+	.hammer_right_text{
+		text-align: left;
+		padding-top: 150px;	}
 
 .insta{
 	text-align: center;
@@ -320,18 +329,28 @@ padding-top: 10%;
 	height:50px;
 }
 
-.insta p{
+.insta p{text-align: center;
 	color : white;
 }
 
 .insta h5{margin: 0 auto;
 	background-color: white; color :black; width: 30%;}
 
-.kontakt{}
+.kontakt{text-align: center;}
 
 
-.social{}
-
+.social{text-align: center;
+	color : white;
+	background-color :black ;
+}
+.social_picture{
+	margin: 0 auto;
+	width : 500px;
+	height : 50px;
+	background-size: 500px 50px;
+	background-repeat: no-repeat;
+	background-image: url(../images/lgo_mimeetmoi_white-2x.png);
+}
 
 
 .pay{}
