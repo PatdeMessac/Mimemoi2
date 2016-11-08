@@ -138,7 +138,7 @@ height : 350px;}
 
 	height : 600px;
 	width:100%;
-	background-color: cyan;
+	background-color: grey;
 }
 
 	.carousel_left{
@@ -159,34 +159,64 @@ height : 350px;}
 	.w3-left, .w3-right, .w3-badge {cursor:pointer}
 	
 	.w3-badge {
-		height:130px;
-		width:130px;
+		height:30px;
+		width:30px;
 		padding:0}
 
+/**************************/
+/*9 slides avec effet hover*/
+/**************************/
 
-
-.newcomer li{
-	list-style-type: none;
-	height:150px;
-	width: 150px;
+.newcomer{
+	display: flex;
+	flex-direction: row;
+	/*list-style-type: none;*/
+	height:1600px;
+	width: 100%;
 }
+.centre{
+	width : 100%;
+	background-color: red}
+.gauche{padding-left: 4%;
+	width : 100%;
+	background-color: blue}
+.droite{
+	width : 100%;
+	background-color: green}
+
+
+.newcomer img{
+	width :90%;
+	height: 32%;}
+
+
+.gauche:hover, .centre:hover, .droite:hover{
+	background-image: url(../images/IMG_737856e91f1766533_1280x1280.jpg);}
+
+
+.newcomer_text{}
+
 
 .Kollektion{
 	height:210px;
 	background-color: cyan;
-	color: white;
+	margin-top: 25px;
+	padding-top: 25px;
 	margin-bottom: 25px;
+	color: red;
+	text-align: center;
 }
 
 .video{
-	position : absolute;
-height: 900px;
+	background-color: grey;
+height: 630px;
 width: 100%;
 }
 
 .player{
-	width : 95%;
-height: 600px;
+	margin: 0 auto;
+	width : 80%;
+height: 100%;
 }
 
 
@@ -198,7 +228,7 @@ height: 250px;}
 	background-color: #F1F1F3;
 }
 
-	.hammer_left{
+	.hammer_left{float: left;
 		height: 400px;
 		width : 40%;
 		padding-left : 40px;
@@ -207,19 +237,32 @@ height: 250px;}
 	}
 
 	.hammer_right{
+		float: right;
 		height: 400px;
 		width : 40%;
 	}
 
 .insta{
+	text-align: center;
 	height: 500px;
-	width : 95%;
-	background-color: black;
+	width : 100%;
+	background-image: url(../images/index2.png);
+}
+
+.insta_body{
+padding-top: 10%;
 }
 .insta img{
 	width : 50px;
 	height:50px;
 }
+
+.insta p{
+	color : white;
+}
+
+.insta h5{margin: 0 auto;
+	background-color: white; color :black; width: 30%;}
 
 .kontakt{}
 
