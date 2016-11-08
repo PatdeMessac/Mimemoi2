@@ -166,6 +166,7 @@ height : 350px;}
 /**************************/
 /*9 slides avec effet hover*/
 /**************************/
+.newcomer_text{}
 
 .newcomer{
 	display: flex;
@@ -174,27 +175,89 @@ height : 350px;}
 	height:1600px;
 	width: 100%;
 }
-.centre{
+.gauche,.centre,.droite  {
+	
 	width : 100%;
-	background-color: red}
-.gauche{padding-left: 4%;
-	width : 100%;
-	background-color: blue}
-.droite{
-	width : 100%;
-	background-color: green}
+	background-color: white}
 
 
 .newcomer img{
-	width :90%;
+	width :60%;
 	height: 32%;}
 
+.gauche{padding-left: 10%;}
 
-.gauche:hover, .centre:hover, .droite:hover{
+
+.g1, .g2, .g3, .c1, .c2, .c3, .d1, .d2, .d3{
+	
+	margin-bottom: 40px;
+}
+
+.g1_text, .g2_text, .g3_text, .c1_text, .c2_text, .c3_text, .d1_text, .d2_text, .d3_text{
+	padding-top: 25px;
+	text-align: center;
+	width: 80%;
+	height: 250px;
+	background-color: #F1F1F3;
+}
+
+.g1_picture, .c1_picture, .d1_picture{
+	
+	width:80%; 
+	height: 250px;
+	background-image: url(../images/IMG_639656e27d79bf778_1280x1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.g1_picture:hover,
+.c1_picture:hover,
+.d1_picture:hover{
+	width:80%; 
+	height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-image: url(../images/IMG_737856e91f1766533_1280x1280.jpg);}
 
 
-.newcomer_text{}
+
+.g2_picture, .c2_picture, .d2_picture{
+	width:80%; 
+	height: 250px;
+	background-image: url(../images/IMG_639656e27d79bf778_1280x1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.g2_picture:hover,
+.c2_picture:hover,
+.d2_picture:hover {
+	width:80%; 
+	height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/IMG_737856e91f1766533_1280x1280.jpg);}
+
+
+.g3_picture, .c3_picture, .d3_picture{
+	width:80%; 
+	height: 250px;
+	background-image: url(../images/IMG_639656e27d79bf778_1280x1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.g3_picture:hover,
+.c3_picture:hover,
+.d3_picture:hover {
+	width:80%; 
+	height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../images/IMG_737856e91f1766533_1280x1280.jpg);}
+
+
+
 
 
 .Kollektion{
@@ -244,7 +307,7 @@ height: 250px;}
 
 .insta{
 	text-align: center;
-	height: 500px;
+	height: 490px;
 	width : 100%;
 	background-image: url(../images/index2.png);
 }
