@@ -1,10 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	<title></title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <title>Triggering a Youtube Video from Clicking a Button Image and Replacing when Ended</title>
 
+</head>
+
+
+
+<body>
+<p>Triggering a Youtube Video from Clicking a Button Image and Replacing when Ended</p>
+<h1>Nate Flink</h1>
+
+
+
+<style type="text/css">
+    /*#head {
+        background-color: #aaa;
+        width:100%;
+    }
+    */
+    #container {
+        cursor:pointer;
+        width:320px;
+        height:180px;
+
+        /*margin:auto;*/
+        /*position:relative;*/
+    }
+   
+    .inactive-state {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color:grey;
+    }
+    .hover-state {
+        background-color:grey;
+    }
+</style>
+
+
+
+<section id="head">
+    <div id="container" class="click-to-play-video inactive-state">
+        <div id="player" class="home-player"></div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#container").mouseenter(function(){
+        $(this).addClass('hover-state');
+    }).mouseleave(function(){
+        $(this).removeClass('hover-state');
+    });
+
+    $("#container.click-to-play-video").click(function(){
+        $('#head').css({"background-color":"black"});/*css entre en fonction apres le click*/
+
+        player = new YT.Player('player', {
+   
+            width : '1160',
+            height : '650',
+            videoId : 'qlEUrEVqDbo',
+            playerVars: { 'autoplay': 1 },
+            events : {
+                'onReady' : onPlayerReady,
+                'onStateChange' : onPlayerStateChange
+            }
+        });
+    });
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onPlayerReady(event) {
+        //event.target.playVideo();
+    }
+    function onPlayerStateChange(event) {
+        if(event.data == YT.PlayerState.ENDED) {
+            player.destroy();
+            $('#head').css({"margin":"0 auto"});
+        }
+    }
+</script>
 </body>
 </html>

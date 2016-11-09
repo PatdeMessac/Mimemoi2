@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodePen by Martin Wolf</title>
+</head>
+<body>
+
+
+<h1>Starting a video by clicking a thumbnail</h1>
+
+
+<a id="play-video" href="#">Play Video</a><br />
+ 
+<iframe id="video" width="210" height="157" src="https://www.youtube.com/embed/9B7te184ZpQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<style>
+
+body {
+  padding: 30px;
+}
+
+a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $('#play-video').on('click', function(ev) {
+ 
+    $("#video")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
+}); 
+</script>
+
+</body>
+</html>
