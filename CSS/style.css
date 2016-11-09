@@ -1,5 +1,5 @@
 
-body{
+html{
 	
 padding: 0;
 margin: 0;
@@ -14,21 +14,22 @@ margin: 0;
 	width : 100%;
 	background-color: black;
 	opacity: 0.9;
-
+	
 }
+
 span{
-	font-size:50px;
+	font-size:5px;
 	cursor:pointer; 
 	
 	background-color : black;
 	padding-top : 0px;
-	padding-left :15px;
+	padding-left :5px;
 	position: fixed;
 }
 
 
-	.navbartop_logo{
-		border: 2px solid red;
+	.navbartop_logo{				/*mime et moi*/
+		/*border: 2px solid red;*/
 		
 		height: 40px;
 		width : 400px;
@@ -45,9 +46,11 @@ span{
 	.navbartop_right{
 		color : white;
 		background-color: black;
-		padding-left: 10%;
+		padding-left: 17%;
+		padding-top: 15px;
 		height: 60px;
 		width : 40%;
+
 
 	}
 		.navbartop_right img{
@@ -55,6 +58,9 @@ span{
 			height : 25px;
 		}
 
+		.navbartop_right a {
+			text-decoration:none;
+		}
 
 .sidenav {
     height: 100%;
@@ -84,8 +90,8 @@ span{
 }
 
 .sidenav .closebtn {
-	background-color: fuchsia;
-	color :lime;
+	background-color: #818181;
+	color :white;
 /*    position: absolute;
     top: 60px;
     right: 25px;
@@ -107,7 +113,6 @@ height : 350px;}
 */
 .top_photo{
 	
-	padding-top: 250px;
 	
 	height : 900px;
 	width: 100%;
@@ -117,7 +122,7 @@ height : 350px;}
 
 	.top_photo h2{
 		margin-top: -5px;
-		padding-top: 250px;
+		padding-top: 300px;
 		color: white;
 		text-align: center;
 	}
@@ -139,7 +144,7 @@ height : 350px;}
 
 	height : 600px;
 	width:100%;
-	background-color: grey;
+	background-color: #F1F1F3;
 }
 
 	.carousel_left{
@@ -263,16 +268,30 @@ height : 350px;}
 
 .Kollektion{
 	height:210px;
-	background-color: cyan;
+	background-color: white;
 	margin-top: 25px;
-	padding-top: 25px;
+	padding-top: 60px;
 	margin-bottom: 25px;
-	color: red;
+	
+	
+}
+.koll_text{
 	text-align: center;
+	width : 18%;
+	background: black;
+	color: white;
+	margin: 0 auto;
 }
 
+.koll_text h1{
+	padding-top : 6px;
+	padding-bottom: 6px;
+font-size: 16px
+}
+
+
 .video{
-	background-color: grey;
+	background-color: white;
 height: 630px;
 width: 100%;
 }
@@ -284,8 +303,34 @@ height: 100%;
 }
 
 
-.easy{width : 100%;
-height: 250px;}
+
+
+
+.easy{text-align: center;
+	width : 100%;
+	height: 450px;
+}
+
+
+	.easy_titre{width: 33%;margin: 0 auto;
+		background-color: grey}
+
+	.easy_carousel{background-color: grey}
+
+	.easy_bottom{background-color: salmon; width:100%;}
+
+	.easy_bottom_left{background-color: grey; width: 25%;}
+
+	.easy_bottom_right{background-color: white; width: 25%; margin-left:66%;}
+
+	.easy_bottom_right img{width:250px; height : 150px;}
+
+
+
+
+
+
+
 
 .hammer{
 	height:530px;
@@ -336,7 +381,10 @@ padding-top: 10%;
 .insta h5{margin: 0 auto;
 	background-color: white; color :black; width: 30%;}
 
+
 .kontakt{text-align: center;}
+
+
 
 
 .social{text-align: center;
@@ -353,6 +401,17 @@ padding-top: 10%;
 }
 
 
+
+
 .pay{}
 
-footer{}
+footer{
+background-color: black;
+color :white;
+	}
+
+	footer .left{}
+
+	footer .center{text-align: center;}
+
+	footer .right{text-align: right;}
