@@ -147,14 +147,30 @@ height : 350px;}
 	background-color: #F1F1F3;
 }
 
-	.carousel_left{
-		width : 29%;
+	.carousel_left{background-color: #f1f1f3;
+		width : 30%;
 		height: 600px;
 		float:left;
-		text-align: center;
+		text-align: left;
+		padding-left: 70px;
 	}
+
+.carousel_left h2{
+	font-size: 15px;
+}
+
+.carousel_left a{
+	padding : 20px 10px 20px 10px;
+	font-size: 20px;
+	background-color: black; 
+	color: white;
+} 
+
+
+
+
 	.carousel_right{float: right;
-		width : 69%;
+		width : 60%;
 		height: 600px;
 	}
 
@@ -172,7 +188,9 @@ height : 350px;}
 /**************************/
 /*9 slides avec effet hover*/
 /**************************/
-.newcomer_text{}
+.newcomer_text{
+	text-align: center;
+}
 
 .newcomer{
 	display: flex;
@@ -490,32 +508,45 @@ background-color: #FFFFFF;
 
 
 
-.hammer{
-	height:530px;
+.hammer{border-top: 1px solid grey;
+	display: inline-flex;
+	width: 100%;
+	height:600px;
 	background-color: #F1F1F3;
 }
 
 	.hammer_left{
-		float: left;
-		margin-top: 50px;
-		margin-left: 50px;
-		margin-right: 80px;
-		height: 400px;
-		width : 40%;
-	
-		background-image: url(../images/made4u.jpg);
+		clear: both;
+		height: 100%;
+		width : 100%;
+		
+	}
+
+	.hammer_left_img{
+		margin-top: 10%;
+		margin-left: 8%;
+		width: 85%;
+		height: 85%;
+	background-image: url(../images/made4u.jpg);
 		background-size: cover;
+		background-repeat: no-repeat;	
 	}
 
 	.hammer_right{
-		
-		
-		height: 400px;
-		width : 40%;
+		float: right;
+		height: 100%;
+		width : 100%;
 	}
 	.hammer_right_text{
-		text-align: left;
-		padding-top: 150px;	}
+	padding-left : 25%;		
+	}
+.hammer h2{
+	background-color: black;
+	color: white;
+	width : 50%;
+	padding-left : 10px;
+}
+
 
 .insta{
 	text-align: center;
@@ -545,7 +576,8 @@ padding-top: 10%;
 
 
 
-.social{text-align: center;
+.social{width : 100%
+	height: 850px;
 	color : white;
 	background-color :black ;
 }
@@ -558,6 +590,45 @@ padding-top: 10%;
 	background-image: url(../images/lgo_mimeetmoi_white-2x.png);
 }
 
+.social_icon{
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	width : 40%;
+	height:80px;
+	background-color: black;
+}
+.S1, .S2, .S3{
+	display: inline-block;
+	
+	margin-top: 10px;
+	margin-left: 15%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 60px;
+	width : 60px;
+}
+
+.S1{
+	background-image: url(../images/ico_facebook_blue.png);
+	
+}
+
+.S2{
+	background-image: url(../images/ico_instagram_white.png);
+	
+}
+.S3{
+	background-image: url(../images/ico_youtube_white.png);
+	
+
+}
+
+.social_text{
+margin : 0 auto;
+	width : 25%;
+	height : 100%;
+	background-color: grey;
+}
 
 
 

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Proposition de positionnement CSS</title>
+  <style type="text/css">
+    div {
+      text-align: center;
+      }
+    #conteneur {
+      width: 950px;
+      margin : 0 auto;
+      }
+    #bandeau {
+      height: 75px;
+      background-color: #0cf;
+      }
+    #bandeau_gauche {
+      float: left;
+      width: 200px;
+      height: 50%; /* juste pour voir ce qu'il y a dessous */
+      background-color: #ccf;
+      }
+    #bandeau_droite {
+      margin-left : 200px;
+      height: 50%;
+      background-color: #aaf;
+      }
+    #menu {
+      float: left;
+      width: 200px;
+      height: 400px;
+      background-color: #f69;
+      }
+    #contenu {
+    /*  float: left;
+      width: 750px;*/
+      margin-left : 200px;
+      height: 400px;
+      background-color: #fc0;
+      }
+    #pied_page {
+      clear: left;
+      height: 50px;
+      background-color: #3f9;
+      }
+    .separ {
+      clear :left;
+      }
+  </style>
+</head>
+<body>
+    <div id="conteneur">
+    <div id="bandeau">
+      <div id="bandeau_gauche">bandeau_gauche</div>
+      <div id="bandeau_droite">bandeau_droite</div>
+      <div class="separ"></div>
+    </div>
+    <div id="menu">Ceci est le menu</div>
+    <div id="contenu">Ceci est le contenu</div>
+    <div id="pied_page">Ceci est le pied de page</div>
+    </div>
+</body>
+</html>
